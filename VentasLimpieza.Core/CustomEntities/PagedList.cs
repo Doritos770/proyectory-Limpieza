@@ -1,25 +1,52 @@
-﻿namespace VentasLimpieza.Core.CustomEntities
+namespace VentasLimpieza.Core.CustomEntities
 {
+    /// <summary>
+    /// Extensión de lista que incluye capacidades de paginación de manera genérica.
+    /// </summary>
+    /// <typeparam name="T">El tipo de objeto contenido en la lista.</typeparam>
     public class PagedList<T> : List<T>
     {
         #region Atributos
-        //Pagina Actual
+        /// <summary>
+        /// Página actual en la que se encuentra la lista.
+        /// </summary>
         public int CurrentPage { get; set; }
 
-        //Total de paginas
+        /// <summary>
+        /// Total de páginas calculadas según el total de registros y el tamaño de página.
+        /// </summary>
         public int TotalPages { get; set; }
 
-        //Cantidad de registros en una pagina
+        /// <summary>
+        /// Límite de registros mostrados por página.
+        /// </summary>
         public int PageSize { get; set; }
 
-        //Cantidad de registros
+        /// <summary>
+        /// Cantidad total de registros encontrados en la consulta sin paginar.
+        /// </summary>
         public int TotalCount { get; set; }
         #endregion
 
         #region Propiedades
+        /// <summary>
+        /// Indica si existe una página anterior.
+        /// </summary>
         public bool HasPreviousPage => CurrentPage > 1;
+
+        /// <summary>
+        /// Indica si existe una página posterior.
+        /// </summary>
         public bool HasNextPage => CurrentPage < TotalPages;
+
+        /// <summary>
+        /// El número de la página siguiente, si existe.
+        /// </summary>
         public int? NextPageNumber => HasNextPage ? CurrentPage + 1 : null;
+
+        /// <summary>
+        /// El número de la página anterior, si existe.
+        /// </summary>
         public int? PreviousPageNumber => HasPreviousPage ? CurrentPage - 1 : null;
         #endregion
 

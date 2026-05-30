@@ -7,6 +7,7 @@ using VentasLimpieza.Core.CustomEntities;
 using VentasLimpieza.Core.Entities;
 using VentasLimpieza.Core.QueryFilter;
 using VentasLimpieza.Core.Exceptions;
+using System.Net;
 using VentasLimpieza.Services.Interfaces;
 using VentasLimpieza.Services.Validators;
 
@@ -29,6 +30,18 @@ namespace VentasLimpieza.Api.Controllers
             _usuarioDtoValidator = usuarioDtoValidator;
         }
 
+        /// <summary>
+        /// Obtiene un reporte estadístico de los pedidos de un usuario específico.
+        /// </summary>
+        /// <remarks>Consulta la información transaccional y devuelve métricas del comportamiento de compra del usuario.</remarks>
+        /// <param name="id">El identificador único del usuario.</param>
+        /// <returns>Un <see cref="IActionResult"/> que contiene estadísticas de pedidos para el usuario.</returns>
+        /// <response code="200">Retorna los datos estadísticos del usuario.</response>
+        /// <response code="400">Si hay un error en la lógica de negocio al obtener las estadísticas.</response>
+        /// <response code="500">Error interno del servidor.</response>
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpGet("{id}/estadisticas-pedidos")]
         public async Task<IActionResult> GetEstadisticasPedidos(int id)
         {
@@ -172,6 +185,16 @@ namespace VentasLimpieza.Api.Controllers
         //#endregion
 
         #region Mapper
+        /// <summary>
+        /// Recupera una lista paginada de todos los usuarios registrados según los filtros provistos.
+        /// </summary>
+        /// <remarks>Este método devuelve los usuarios mapeados en objetos <see cref="UsuarioDto"/> e incluye información de paginación detallada.</remarks>
+        /// <param name="filters">Filtros de búsqueda y criterios de paginación.</param>
+        /// <returns>Un <see cref="IActionResult"/> que contiene un <see cref="ApiResponse{T}"/> con el catálogo de usuarios.</returns>
+        /// <response code="200">Retorna la colección paginada de usuarios.</response>
+        /// <response code="500">Error interno del servidor.</response>
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<UsuarioDto>>))]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpGet("dto/mapper")]
         //?userId=1
         public async Task<IActionResult> GetDtoMapperUsuario(
@@ -201,6 +224,18 @@ namespace VentasLimpieza.Api.Controllers
             //return Ok(response);
         }
         
+        /// <summary>
+        /// Obtiene la información detallada de un usuario por su ID.
+        /// </summary>
+        /// <remarks>Realiza una búsqueda del usuario y lo devuelve mapeado como <see cref="UsuarioDto"/>.</remarks>
+        /// <param name="id">El identificador numérico del usuario.</param>
+        /// <returns>Un <see cref="IActionResult"/> con el usuario encontrado.</returns>
+        /// <response code="200">Retorna el usuario solicitado.</response>
+        /// <response code="404">Si no existe ningún usuario asociado al ID enviado.</response>
+        /// <response code="500">Error interno del servidor.</response>
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<UsuarioDto>))]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpGet("dto/mapper/{id}")]
         public async Task<IActionResult> GetDtoMapperUsuarioById(int id)
         {
@@ -213,6 +248,18 @@ namespace VentasLimpieza.Api.Controllers
             return Ok(response);
         }
 
+        /// <summary>
+        /// Registra un nuevo usuario utilizando DTOs.
+        /// </summary>
+        /// <remarks>Valida el <see cref="UsuarioDto"/> recibido mediante <see cref="UsuarioDtoValidator"/> y persiste la información si es correcta.</remarks>
+        /// <param name="usuarioDto">Datos requeridos para la creación del usuario.</param>
+        /// <returns>Un <see cref="IActionResult"/> indicando que el registro se realizó con éxito.</returns>
+        /// <response code="201">Retorna el usuario recién creado.</response>
+        /// <response code="400">Si existen errores de validación en la información enviada.</response>
+        /// <response code="500">Error interno del servidor al crear el usuario.</response>
+        [ProducesResponseType((int)HttpStatusCode.Created, Type = typeof(ApiResponse<UsuarioDto>))]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpPost("dto/mapper")]
         public async Task<IActionResult> InsertDtoMapperUsuario(UsuarioDto usuarioDto)
         {
@@ -249,6 +296,21 @@ namespace VentasLimpieza.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Actualiza la información de un usuario existente.
+        /// </summary>
+        /// <remarks>Sobrescribe la información del usuario siempre que el DTO pase las validaciones de negocio correspondientes.</remarks>
+        /// <param name="id">El ID del usuario a modificar.</param>
+        /// <param name="usuarioDto">El objeto DTO con la información actualizada.</param>
+        /// <returns>Un <see cref="IActionResult"/> indicando el resultado de la actualización.</returns>
+        /// <response code="200">El usuario fue actualizado exitosamente.</response>
+        /// <response code="400">Si el ID no coincide o los datos son inválidos.</response>
+        /// <response code="404">Si no se encuentra un usuario con ese ID.</response>
+        /// <response code="500">Error interno del servidor al procesar la actualización.</response>
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<UsuarioDto>))]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpPut("dto/mapper/{id}")]
         public async Task<IActionResult> UpdateDtoMapperUsuario(int id, [FromBody] UsuarioDto usuarioDto)
         {
@@ -292,6 +354,18 @@ namespace VentasLimpieza.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Elimina un usuario del sistema (borrado físico o lógico según capa de servicios).
+        /// </summary>
+        /// <remarks>Busca el usuario especificado y lo elimina de la base de datos si existe.</remarks>
+        /// <param name="id">El ID del usuario a eliminar.</param>
+        /// <returns>Un <see cref="IActionResult"/> indicando si la operación fue exitosa.</returns>
+        /// <response code="204">El usuario fue eliminado correctamente (sin contenido devuelto).</response>
+        /// <response code="404">Si no se encuentra el usuario con el ID especificado.</response>
+        /// <response code="500">Error interno del servidor al intentar borrar al usuario.</response>
+        [ProducesResponseType((int)HttpStatusCode.NoContent)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpDelete("dto/mapper/{id}")]
         public async Task<IActionResult> DeleteDtoMapperUsuario(int id)
         {
@@ -305,6 +379,16 @@ namespace VentasLimpieza.Api.Controllers
         #endregion
 
         #region BajaLogica
+        /// <summary>
+        /// Cambia el estado de un usuario a Inactivo (Baja lógica).
+        /// </summary>
+        /// <remarks>En lugar de eliminar físicamente al usuario, se marca como inactivo en el sistema.</remarks>
+        /// <param name="id">El ID del usuario a desactivar.</param>
+        /// <returns>Un <see cref="IActionResult"/> confirmando la desactivación.</returns>
+        /// <response code="200">El usuario se desactivó correctamente.</response>
+        /// <response code="500">Error interno del servidor al intentar desactivar al usuario.</response>
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<string>))]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpPut("dto/mapper/desactivar/{id}")]
         public async Task<IActionResult> DesactivarUsuario(int id)
         {
@@ -324,6 +408,16 @@ namespace VentasLimpieza.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Restaura el estado de un usuario inactivo a Activo.
+        /// </summary>
+        /// <remarks>Permite habilitar nuevamente el acceso a un usuario previamente dado de baja.</remarks>
+        /// <param name="id">El ID del usuario a reactivar.</param>
+        /// <returns>Un <see cref="IActionResult"/> confirmando la reactivación.</returns>
+        /// <response code="200">El usuario se activó correctamente.</response>
+        /// <response code="500">Error interno del servidor al intentar reactivar al usuario.</response>
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<string>))]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpPut("dto/mapper/activar/{id}")]
         public async Task<IActionResult> ActivarUsuario(int id)
         {
@@ -343,6 +437,15 @@ namespace VentasLimpieza.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Obtiene un listado de todos los usuarios inactivos (dados de baja lógicamente).
+        /// </summary>
+        /// <remarks>Filtra y devuelve usuarios cuyo estado `IsActive` sea false.</remarks>
+        /// <returns>Un <see cref="IActionResult"/> con la lista de usuarios inactivos.</returns>
+        /// <response code="200">Retorna la colección de usuarios inactivos.</response>
+        /// <response code="500">Error interno del servidor.</response>
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<UsuarioDto>>))]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpGet("dto/mapper/inactivos")]
         public async Task<IActionResult> GetUsuariosInactivos()
         {
@@ -365,6 +468,15 @@ namespace VentasLimpieza.Api.Controllers
         #endregion
 
         #region Dapper
+        /// <summary>
+        /// Obtiene el Top de usuarios con la mayor cantidad de pedidos realizados.
+        /// </summary>
+        /// <remarks>Utiliza una consulta optimizada (Dapper) para contabilizar pedidos y rankear a los clientes más frecuentes.</remarks>
+        /// <returns>Un <see cref="IActionResult"/> con el listado simple de usuarios y su cantidad de pedidos.</returns>
+        /// <response code="200">Retorna el ranking de usuarios por número de pedidos.</response>
+        /// <response code="500">Error interno del servidor al ejecutar la consulta.</response>
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<UsuarioPedidosSimple>>))]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpGet("dto/mapper/dapper/top-pedidos")]
         public async Task<IActionResult> GetTopUsuariosPedidos()
         {
@@ -384,6 +496,16 @@ namespace VentasLimpieza.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Obtiene todas las reseñas (calificaciones y comentarios) dejadas por un usuario específico.
+        /// </summary>
+        /// <remarks>Recupera el historial de retroalimentación de un usuario utilizando Dapper para rendimiento óptimo.</remarks>
+        /// <param name="id">El ID numérico del usuario.</param>
+        /// <returns>Un <see cref="IActionResult"/> que contiene las reseñas del usuario.</returns>
+        /// <response code="200">Retorna el listado de reseñas realizadas por el usuario.</response>
+        /// <response code="500">Error interno del servidor.</response>
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<ResenaSimple>>))]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpGet("dto/mapper/dapper/{id}/resenas")]
         public async Task<IActionResult> GetResenasUsuario(int id)
         {
@@ -405,6 +527,16 @@ namespace VentasLimpieza.Api.Controllers
         #endregion
 
         #region Contrasena
+        /// <summary>
+        /// Solicita la generación y envío de un código de verificación para cambiar la contraseña.
+        /// </summary>
+        /// <remarks>Inicia el flujo de recuperación de cuenta. Envía un código (ej. vía email/SMS) necesario para restablecer el acceso.</remarks>
+        /// <param name="solicitud">Objeto que contiene el email u otra credencial de contacto del usuario.</param>
+        /// <returns>Un <see cref="IActionResult"/> indicando que el código fue enviado exitosamente.</returns>
+        /// <response code="200">El código se generó y envió con éxito.</response>
+        /// <response code="500">Error interno del servidor al procesar la solicitud de código.</response>
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<string>))]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpPost("dto/mapper/solicitar-codigo")]
         public async Task<IActionResult> SolicitarCodigoCambioContrasena([FromBody] SolicitudCambiodeContrasena solicitud)
         {
@@ -424,6 +556,18 @@ namespace VentasLimpieza.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Valida el código y actualiza la contraseña de un usuario.
+        /// </summary>
+        /// <remarks>Permite restablecer la contraseña utilizando un código de verificación previamente solicitado.</remarks>
+        /// <param name="nuevaContrasena">Objeto con el código y la nueva contraseña deseada.</param>
+        /// <returns>Un <see cref="IActionResult"/> confirmando el éxito de la operación.</returns>
+        /// <response code="200">La contraseña fue actualizada correctamente.</response>
+        /// <response code="400">Si el código enviado es inválido o expiró.</response>
+        /// <response code="500">Error interno del servidor.</response>
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<string>))]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpPut("dto/mapper/actualizar-contrasena")]
         public async Task<IActionResult> ActualizarContrasena([FromBody] NuevaContrasena nuevaContrasena)
         {

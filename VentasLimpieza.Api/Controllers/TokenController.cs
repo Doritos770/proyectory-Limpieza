@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using System.Net;
 using VentasLimpieza.Core.Entities;
 using VentasLimpieza.Core.Enum;
 using VentasLimpieza.Services.Interfaces;
@@ -24,6 +25,20 @@ namespace SocialMedia.Api.Controllers
             _passwordService = passwordService;
         }
 
+        /// <summary>
+        /// Autentica a un usuario y genera un token JWT válido.
+        /// </summary>
+        /// <remarks>Recibe las credenciales (usuario y contraseña) a través del modelo <see cref="UserLogin"/>, 
+        /// valida su existencia y contraseña y, si es correcto, genera y retorna un token JWT que debe enviarse en la 
+        /// cabecera de las siguientes peticiones como "Bearer {token}".</remarks>
+        /// <param name="userLogin">Objeto que contiene el nombre de usuario y la contraseña a validar.</param>
+        /// <returns>Un <see cref="IActionResult"/> que contiene el token JWT generado si las credenciales son correctas.</returns>
+        /// <response code="200">Retorna el token JWT generado.</response>
+        /// <response code="401">Si las credenciales provistas son inválidas.</response>
+        /// <response code="500">Error interno del servidor al procesar la autenticación.</response>
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(object))]
+        [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpPost]
         public async Task<IActionResult> Login(UserLogin userLogin)
         {

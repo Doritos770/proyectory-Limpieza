@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "X20ME7bwkQE=",
+  "dgSpecHash": "aNSnh3pBR/s=",
   "success": true,
-  "projectFilePath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj",
+  "projectFilePath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\D E L L\\.nuget\\packages\\microsoft.openapi\\1.6.25\\microsoft.openapi.1.6.25.nupkg.sha512",
-    "C:\\Users\\D E L L\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\9.0.6\\swashbuckle.aspnetcore.annotations.9.0.6.nupkg.sha512",
-    "C:\\Users\\D E L L\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\9.0.6\\swashbuckle.aspnetcore.swagger.9.0.6.nupkg.sha512",
-    "C:\\Users\\D E L L\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\9.0.6\\swashbuckle.aspnetcore.swaggergen.9.0.6.nupkg.sha512"
+    "C:\\Users\\doria\\.nuget\\packages\\microsoft.openapi\\1.6.25\\microsoft.openapi.1.6.25.nupkg.sha512",
+    "C:\\Users\\doria\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\9.0.6\\swashbuckle.aspnetcore.annotations.9.0.6.nupkg.sha512",
+    "C:\\Users\\doria\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\9.0.6\\swashbuckle.aspnetcore.swagger.9.0.6.nupkg.sha512",
+    "C:\\Users\\doria\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\9.0.6\\swashbuckle.aspnetcore.swaggergen.9.0.6.nupkg.sha512"
   ],
   "logs": []
 }

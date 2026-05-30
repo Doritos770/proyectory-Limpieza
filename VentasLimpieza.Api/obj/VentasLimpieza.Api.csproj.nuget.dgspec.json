@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\VentasLimpieza.Api.csproj": {}
+    "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\VentasLimpieza.Api.csproj": {}
   },
   "projects": {
-    "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\VentasLimpieza.Api.csproj": {
+    "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\VentasLimpieza.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\VentasLimpieza.Api.csproj",
+        "projectUniqueName": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\VentasLimpieza.Api.csproj",
         "projectName": "VentasLimpieza.Api",
-        "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\VentasLimpieza.Api.csproj",
-        "packagesPath": "C:\\Users\\D E L L\\.nuget\\packages\\",
-        "outputPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\obj\\",
+        "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\VentasLimpieza.Api.csproj",
+        "packagesPath": "C:\\Users\\doria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\D E L L\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\doria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -31,17 +31,16 @@
         },
         "frameworks": {
           "net10.0": {
-            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj": {
-                "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj"
+              "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj": {
+                "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj"
               },
-              "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj": {
-                "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj"
+              "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj"
               },
-              "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj": {
-                "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj"
+              "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj": {
+                "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj"
               }
             }
           }
@@ -56,11 +55,10 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
@@ -80,6 +78,22 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.13, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[9.0.6, )"
             }
           },
           "imports": [
@@ -101,7 +115,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -519,20 +533,20 @@
         }
       }
     },
-    "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj": {
+    "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj",
+        "projectUniqueName": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj",
         "projectName": "VentasLimpieza.Core",
-        "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj",
-        "packagesPath": "C:\\Users\\D E L L\\.nuget\\packages\\",
-        "outputPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\obj\\",
+        "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj",
+        "packagesPath": "C:\\Users\\doria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\D E L L\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\doria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -546,7 +560,6 @@
         },
         "frameworks": {
           "net10.0": {
-            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -561,11 +574,10 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "Swashbuckle.AspNetCore.Annotations": {
@@ -589,7 +601,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -867,20 +879,20 @@
         }
       }
     },
-    "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj": {
+    "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj",
         "projectName": "VentasLimpieza.Infrastructure",
-        "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\D E L L\\.nuget\\packages\\",
-        "outputPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\doria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\D E L L\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\doria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -894,11 +906,10 @@
         },
         "frameworks": {
           "net10.0": {
-            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj": {
-                "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj"
+              "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj": {
+                "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj"
               }
             }
           }
@@ -913,11 +924,10 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "AutoMapper": {
@@ -969,7 +979,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1247,20 +1257,20 @@
         }
       }
     },
-    "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj": {
+    "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj",
+        "projectUniqueName": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj",
         "projectName": "VentasLimpieza.Services",
-        "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj",
-        "packagesPath": "C:\\Users\\D E L L\\.nuget\\packages\\",
-        "outputPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Services\\obj\\",
+        "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj",
+        "packagesPath": "C:\\Users\\doria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\D E L L\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\doria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1274,14 +1284,13 @@
         },
         "frameworks": {
           "net10.0": {
-            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj": {
-                "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj"
+              "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj": {
+                "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj"
               },
-              "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj": {
-                "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj"
+              "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj"
               }
             }
           }
@@ -1296,11 +1305,10 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "FluentValidation.AspNetCore": {
@@ -1328,7 +1336,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

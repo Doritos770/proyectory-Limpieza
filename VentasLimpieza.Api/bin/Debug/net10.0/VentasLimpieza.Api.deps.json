@@ -12,6 +12,10 @@
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "9.0.13",
           "Microsoft.AspNetCore.OpenApi": "9.0.13",
           "Microsoft.EntityFrameworkCore.Design": "9.0.13",
+          "Swashbuckle.AspNetCore.Annotations": "9.0.6",
+          "Swashbuckle.AspNetCore.Swagger": "9.0.6",
+          "Swashbuckle.AspNetCore.SwaggerGen": "9.0.6",
+          "Swashbuckle.AspNetCore.SwaggerUI": "9.0.6",
           "VentasLimpieza.Core": "1.0.0",
           "VentasLimpieza.Infrastructure": "1.0.0",
           "VentasLimpieza.Services": "1.0.0"
@@ -758,6 +762,14 @@
           }
         }
       },
+      "Swashbuckle.AspNetCore.SwaggerUI/9.0.6": {
+        "runtime": {
+          "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "assemblyVersion": "9.0.6.0",
+            "fileVersion": "9.0.6.1840"
+          }
+        }
+      },
       "System.ClientModel/1.0.0": {
         "dependencies": {
           "System.Memory.Data": "1.0.2"
@@ -1328,6 +1340,13 @@
       "sha512": "sha512-yYrDs5qpIa4UXP+a02X0ZLQs6HSd1C8t6hF6J1fnxoawi3PslJg1yUpLBS89HCbrDACzmwEGG25il+8aa0zdnw==",
       "path": "swashbuckle.aspnetcore.swaggergen/9.0.6",
       "hashPath": "swashbuckle.aspnetcore.swaggergen.9.0.6.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WGsw/Yop9b16miq8TQd4THxuEgkP5cH3+DX93BrX9m0OdPcKNtg2nNm77WQSAsA+Se+M0bTiu8bUyrruRSeS5g==",
+      "path": "swashbuckle.aspnetcore.swaggerui/9.0.6",
+      "hashPath": "swashbuckle.aspnetcore.swaggerui.9.0.6.nupkg.sha512"
     },
     "System.ClientModel/1.0.0": {
       "type": "package",

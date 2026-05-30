@@ -196,3 +196,4 @@ F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\Venta
 F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Infrastructure\obj\Debug\net10.0\VentasLimpieza.Infrastructure.pdb
 F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Infrastructure\obj\Debug\net10.0\VentasLimpieza.Infrastructure.genruntimeconfig.cache
 F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Infrastructure\obj\Debug\net10.0\ref\VentasLimpieza.Infrastructure.dll
+C:\Users\doria\OneDrive\Escritorio\vannessa\ProyectoLimpieza\VentasLimpieza.Infrastructure\bin\Debug\net10.0\VentasLimpieza.Core.xml

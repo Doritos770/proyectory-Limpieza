@@ -1719,3 +1719,8 @@ F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\Venta
 F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Api\obj\Debug\net10.0\VentasLimpieza.Api.pdb
 F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Api\obj\Debug\net10.0\VentasLimpieza.Api.genruntimeconfig.cache
 F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Api\obj\Debug\net10.0\ref\VentasLimpieza.Api.dll
+C:\Users\doria\OneDrive\Escritorio\vannessa\ProyectoLimpieza\VentasLimpieza.Api\bin\Debug\net10.0\VentasLimpieza.Api.xml
+C:\Users\doria\OneDrive\Escritorio\vannessa\ProyectoLimpieza\VentasLimpieza.Api\bin\Debug\net10.0\VentasLimpieza.Core.xml
+C:\Users\doria\OneDrive\Escritorio\vannessa\ProyectoLimpieza\VentasLimpieza.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\doria\OneDrive\Escritorio\vannessa\ProyectoLimpieza\VentasLimpieza.Api\obj\Debug\net10.0\VentasLimpieza.Api.xml
+C:\Users\doria\OneDrive\Escritorio\vannessa\ProyectoLimpieza\VentasLimpieza.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
