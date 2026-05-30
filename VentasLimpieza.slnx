@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="VentasLimpieza.Api/VentasLimpieza.Api.csproj" />
+  <Project Path="VentasLimpieza.Core/VentasLimpieza.Core.csproj" />
+  <Project Path="VentasLimpieza.Infrastructure/VentasLimpieza.Infrastructure.csproj" />
+  <Project Path="VentasLimpieza.Services/VentasLimpieza.Services.csproj" Id="f9af5b10-0e4e-42f3-815b-be1977e00083" />
+</Solution>

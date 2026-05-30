@@ -1,0 +1,205 @@
+========================================================================
+                     MANUAL FINAL DEL PROYECTO 
+                     API "VENTAS LIMPIEZA" (V. 1.0)
+========================================================================
+Base URL por defecto: http://localhost:5149
+
+Este documento describe de manera general TODOS los módulos y 
+funcionalidades que componen la API del sistema.
+
+------------------------------------------------------------------------
+ 1. SEGURIDAD Y AUTENTICACIÓN (TokenController / SecurityController)
+------------------------------------------------------------------------
+Responsable de gestionar el inicio de sesión y la seguridad.
+(Generalmente requiere que envíes las credenciales en el Body).
+
+- POST /api/token
+  (Inicio de Sesión) Envías el usuario y contraseña, y la API te 
+  devuelve el "Token de Autorización" (JWT).
+  EJEMPLO JSON (POST):
+  {
+    "user": "cliente@correo.com",
+    "password": "MiPasswordSeguro123"
+  }
+
+------------------------------------------------------------------------
+ 2. MÓDULO DE USUARIOS (UsuarioController)
+------------------------------------------------------------------------
+Gestiona clientes, administradores y la recuperación de cuentas.
+
+- GET /api/usuario
+  Obtiene la lista de todos los usuarios registrados (con paginación).
+- GET /api/usuario/{id}
+  Obtiene la información de un usuario específico.
+- POST /api/usuario
+  Registra un nuevo usuario en el sistema.
+  EJEMPLO JSON (POST):
+  {
+    "email": "nuevo@correo.com",
+    "password": "Password123!",
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "telefono": "78945612",
+    "isActive": 1
+  }
+
+- PUT /api/usuario
+  Actualiza los datos personales de un usuario (debes mandar el ID).
+  EJEMPLO JSON (PUT):
+  {
+    "id": 1,
+    "email": "nuevo@correo.com",
+    "password": "Password123!",
+    "nombre": "Juan Carlos",
+    "apellido": "Perez",
+    "telefono": "78945612",
+    "isActive": 1
+  }
+- DELETE /api/usuario/{id}
+  Elimina o desactiva (baja lógica) a un usuario.
+- POST /api/usuario/solicitud-codigo
+  Genera el código de 6 dígitos para recuperar contraseña. (Max 2 semanales).
+- POST /api/usuario/cambiar-contrasena
+  Cambia la contraseña utilizando el código de 6 dígitos.
+- GET /api/usuario/{id}/estadisticas-pedidos
+  Obtiene el total de compras, dinero gastado y lista de pedidos del usuario.
+
+------------------------------------------------------------------------
+ 3. MÓDULO DE PRODUCTOS (ProductoController)
+---------------------------------------------------------
+Gestiona el catálogo de productos disponibles para la venta.
+
+- GET /api/producto
+  Devuelve todo el catálogo de productos.
+- GET /api/producto/{id}
+  Obtiene los detalles de un producto específico.
+- POST /api/producto
+  Crea un nuevo producto en el catálogo.
+  EJEMPLO JSON (POST):
+  {
+    "nombre": "Limpiador de Pisos Mágico",
+    "descripcion": "Aroma a lavanda",
+    "categoriaId": 1,
+    "marca": "LimpiaMax",
+    "presentacion": "Botella 1 Litro",
+    "precio": 25.50,
+    "imagenUrl": "http://miservidor.com/imagen.jpg"
+  }
+
+- PUT /api/producto
+  Actualiza los detalles de un producto (debes incluir su ID).
+  EJEMPLO JSON (PUT):
+  {
+    "id": 3,
+    "nombre": "Limpiador de Pisos Mágico (Editado)",
+    "descripcion": "Aroma a lavanda concentrado",
+    "categoriaId": 1,
+    "marca": "LimpiaMax",
+    "presentacion": "Botella 1 Litro",
+    "precio": 27.50,
+    "imagenUrl": "http://miservidor.com/imagen.jpg"
+  }
+- DELETE /api/producto/{id}
+  Elimina un producto del catálogo.
+- GET /api/producto/mas-vendidos?limit=5
+  Devuelve el "Top N" de los productos más vendidos en la tienda.
+- GET /api/producto/ganancias-por-lote
+  (Nuevo) Reporte financiero que calcula la ganancia neta generada por
+  las ventas de los lotes, restando su precio de compra.
+
+------------------------------------------------------------------------
+ 4. MÓDULO DE INVENTARIO Y LOTES (LoteproductoController)
+------------------------------------------------------------------------
+Controla el ingreso físico de mercadería, fechas de caducidad y stock.
+
+- GET /api/loteproducto
+  Lista de todos los lotes (con fechas de vencimiento y stock actual).
+- GET /api/loteproducto/{id}
+  Detalle de un lote de inventario.
+- POST /api/loteproducto
+  Ingresar nueva mercadería (Registrar un lote nuevo).
+  EJEMPLO JSON (POST):
+  {
+    "productoId": 3,
+    "numeroLote": "LOTE-2023-B2",
+    "fechaFabricacion": "2023-01-15",
+    "fechaCaducidad": "2025-01-15",
+    "cantidadIngreso": 500,
+    "cantidadDisponible": 500,
+    "precioCompra": 12.50,
+    "ubicacionAlmacen": "Pasillo 4, Estante B",
+    "activo": 1
+  }
+
+- PUT /api/loteproducto
+  Actualizar datos de un lote (debes incluir su ID).
+  EJEMPLO JSON (PUT):
+  {
+    "id": 10,
+    "productoId": 3,
+    "numeroLote": "LOTE-2023-B2",
+    "fechaFabricacion": "2023-01-15",
+    "fechaCaducidad": "2025-01-15",
+    "cantidadIngreso": 500,
+    "cantidadDisponible": 450,
+    "precioCompra": 12.50,
+    "ubicacionAlmacen": "Pasillo 4, Estante C",
+    "activo": 1
+  }
+
+------------------------------------------------------------------------
+ 5. MÓDULO DE VENTAS Y PEDIDOS (PedidoController)
+------------------------------------------------------------------------
+Lógica del carrito de compras y estados de venta.
+
+- GET /api/pedido
+  Lista todos los pedidos realizados en el sistema.
+- GET /api/pedido/{id}
+  Ve el detalle de un pedido (productos comprados, precios, totales).
+- POST /api/pedido
+  Crea un pedido. Aplica la lógica FIFO de Lotes: El stock se descuenta
+  automáticamente del lote más cercano a caducar. Rechaza si el costo
+  de envío es negativo o no hay stock.
+  EJEMPLO JSON (POST):
+  {
+    "usuarioId": 1,
+    "direccionId": 2,
+    "metodoPago": "Efectivo",
+    "costoEnvio": 10.00,
+    "detalles": [
+      {
+        "productoId": 3,
+        "cantidad": 2
+      }
+    ]
+  }
+
+- PUT /api/pedido/{id}/estado
+  Cambia el estado del pedido. (Ej. a "Entregado").
+  * REGLAS: Si pasas el estado a "Cancelado", los productos regresan 
+    al inventario de los lotes de donde salieron. Si el pedido ya 
+    fue "Entregado" no permite cancelaciones.
+  EJEMPLO JSON (PUT) - Nota: Solo manda el string entre comillas:
+  "Cancelado"
+- GET /api/pedido/resumen-general
+  Devuelve el total de pedidos exitosos y el total de ingresos recaudados.
+
+========================================================================
+ FORMATO COMÚN DE RESPUESTAS (Paginación)
+========================================================================
+Gran parte de los endpoints tipo "GET" que devuelven listas 
+incluyen la propiedad "pagination" en el JSON, la cual te permite
+saber cuántas páginas existen, en qué página estás y el tamaño:
+
+{
+  "data": [ ...lista de objetos... ],
+  "pagination": {
+    "totalCount": 150,
+    "pageSize": 10,
+    "currentPage": 1,
+    "totalPages": 15,
+    "hasNextPage": true,
+    "hasPreviousPage": false
+  }
+}
+========================================================================

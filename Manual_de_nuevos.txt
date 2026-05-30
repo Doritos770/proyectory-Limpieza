@@ -1,0 +1,103 @@
+=========================================================
+ MANUAL DE USO - API VENTAS LIMPIEZA
+=========================================================
+Este documento contiene la forma de uso, los endpoints (rutas)
+y los ejemplos JSON (para Postman) de todas las funcionalidades
+críticas implementadas hasta la fecha.
+
+La URL base asumida es: http://localhost:5149
+(Sustituye el puerto si es diferente en tu máquina).
+
+---------------------------------------------------------
+ 1. GESTIÓN DE SEGURIDAD Y CONTRASEÑAS (CU-02)
+---------------------------------------------------------
+
+A. SOLICITAR CÓDIGO DE RECUPERACIÓN
+   - Uso: Genera un código de 6 dígitos.
+   - Regla: Solo puedes pedir 2 códigos por semana.
+   - Ruta: POST /api/usuario/solicitud-codigo
+   - JSON a enviar (Body -> raw -> JSON):
+     {
+       "correo": "cliente@correo.com",
+       "telefono": "12345678"
+     }
+
+B. CAMBIAR CONTRASEÑA
+   - Uso: Cambia la contraseña validando el código previamente generado.
+   - Ruta: POST /api/usuario/cambiar-contrasena
+   - JSON a enviar:
+     {
+       "correo": "cliente@correo.com",
+       "codigo": "123456",
+       "nuevaContrasena": "MiNuevaPassword123"
+     }
+
+---------------------------------------------------------
+ 2. GESTIÓN DE VENTAS Y PEDIDOS (CU-03)
+---------------------------------------------------------
+
+A. CREAR UN NUEVO PEDIDO
+   - Uso: Crea la venta y automáticamente resta el stock de los 
+          productos utilizando lógica FIFO (primeros en caducar 
+          se venden primero).
+   - Reglas: No permite CostoEnvio negativo. Falla si no hay stock suficiente.
+   - Ruta: POST /api/pedido
+   - JSON a enviar:
+     {
+       "usuarioId": 1,
+       "direccionId": 2,
+       "metodoPago": "Tarjeta",
+       "costoEnvio": 15.50,
+       "detalles": [
+         {
+           "productoId": 3,
+           "cantidad": 5
+         },
+         {
+           "productoId": 7,
+           "cantidad": 2
+         }
+       ]
+     }
+
+B. ACTUALIZAR ESTADO DEL PEDIDO (CANCELACIONES)
+   - Uso: Cambia el estado de un pedido (ej. "Entregado", "Cancelado").
+   - Reglas: 
+       - Si envías "Cancelado", el sistema devuelve automáticamente 
+         las unidades vendidas a su respectivo Lote.
+       - Si el estado ya es "Entregado" o "Cancelado", el sistema
+         bloquea el intento y arroja error.
+   - Ruta: PUT /api/pedido/{id_del_pedido}/estado
+   - URL Ejemplo: http://localhost:5149/api/pedido/25/estado
+   - JSON a enviar (Solo enviar el texto entre comillas dobles):
+     "Cancelado"
+
+---------------------------------------------------------
+ 3. ESTADÍSTICAS Y REPORTES CON DAPPER (CU-06)
+---------------------------------------------------------
+Todos estos endpoints son de tipo GET (no requieren Body).
+
+A. ESTADÍSTICAS POR USUARIO
+   - Uso: Conocer cuántos pedidos hizo un cliente, su total gastado
+          y la lista resumida de sus pedidos históricos.
+   - Ruta: GET /api/usuario/{id_del_usuario}/estadisticas-pedidos
+   - Ejemplo URL: http://localhost:5149/api/usuario/1/estadisticas-pedidos
+
+B. GANANCIAS NETAS POR LOTE
+   - Uso: Reporte financiero que calcula la ganancia real de la empresa
+          fórmula: (Precio de Venta - Precio de Compra) * Cantidad.
+   - Ruta: GET /api/producto/ganancias-por-lote
+
+C. PRODUCTOS MÁS VENDIDOS
+   - Uso: Muestra los productos más populares.
+   - Ruta: GET /api/producto/mas-vendidos?limit=5
+   - NOTA: Puedes cambiar el "limit=5" por "limit=10" para ver el top 10.
+
+D. RESUMEN GENERAL DE NEGOCIO
+   - Uso: Muestra cuántas ventas totales hay en el sistema y 
+          el ingreso bruto total acumulado (ignora los cancelados).
+   - Ruta: GET /api/pedido/resumen-general
+
+=========================================================
+ FIN DEL MANUAL
+=========================================================
