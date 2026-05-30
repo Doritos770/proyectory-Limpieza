@@ -1,15 +1,18 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SocialMedia.Api.Responses;
 using VentasLimpieza.core.Dtos;
 using VentasLimpieza.Core.Auxiliares;
 using VentasLimpieza.Core.CustomEntities;
 using VentasLimpieza.Core.Entities;
+using VentasLimpieza.Core.Enum;
 using VentasLimpieza.Core.QueryFilter;
 using VentasLimpieza.Services.Interfaces;
 
 namespace VentasLimpieza.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")] // api/producto
     [ApiController]
     public class ProductoController : ControllerBase
@@ -24,6 +27,7 @@ namespace VentasLimpieza.Api.Controllers
             _productoService = productoService;
             _mapper = mapper;
         }
+        [AllowAnonymous] //cualquiera ve lo necesario, ya luego se protege con admin 
         [HttpGet]
         public async Task<IActionResult> GetAll(
             [FromQuery] ProductoQueryFilter? filters)
@@ -54,56 +58,7 @@ namespace VentasLimpieza.Api.Controllers
             
             
         }
-
-        /***************************************************************************************************/
-        [HttpGet("dto/mapper/dapper/productoPorLote")]
-        public async Task<IActionResult> GetPostsDtoMapperDapper
-            ()
-        {
-            var productos = await _productoService.GetProductosPorLote();
-            var productosDto = _mapper.Map<IEnumerable<ProductoPorLote>>(productos);
-
-            var response = new ApiResponse<IEnumerable<ProductoPorLote>>(productosDto);
-
-            return Ok(response);
-        }
-        [HttpGet("dto/mapper/dapper/productosSinVenta")]
-        public async Task<IActionResult> GetProductosSinVenta
-            ()
-        {
-            var productos = await _productoService.GetProductosSinVenta();
-            var productosDto = _mapper.Map<IEnumerable<ProductoSinVentaDTO>>(productos);
-
-            var response = new ApiResponse<IEnumerable<ProductoSinVentaDTO>>(productosDto);
-
-            return Ok(response);
-        }
-
-        [HttpGet("mas-vendidos")]
-        public async Task<IActionResult> GetProductosMasVendidos([FromQuery] int limit = 5)
-        {
-            var result = await _productoService.GetProductosMasVendidos(limit);
-            return Ok(result);
-        }
-
-        [HttpGet("ganancias-por-lote")]
-        public async Task<IActionResult> GetGananciasPorLote()
-        {
-            var result = await _productoService.GetGananciasPorLote();
-            return Ok(result);
-        }
-
-        [HttpGet("dto/mapper/estadistica")]
-        public async Task<IActionResult> GetEstadisticaProductoPorCategoria()
-        {
-            var producto = await _productoService.GetEstadisticaProductoPorCategoria();
-            if (producto == null)
-                return NotFound(new { mensaje = "Producto no encontrado" });
-            var productoDto = _mapper.Map<ProductoDtoPorLote>(producto);
-            var response = new ApiResponse<ProductoDtoPorLote>(productoDto);
-            return Ok(response);
-        }
-
+        [AllowAnonymous]
         //[HttpGet("{id}")]
         [HttpGet("dto/mapper/{id}")]
         public async Task<IActionResult> GetDtoMapperProductoById(int id)
@@ -115,9 +70,60 @@ namespace VentasLimpieza.Api.Controllers
             var response = new ApiResponse<ProductoDtoPorLote>(productoDto);
             return Ok(response);
         }
-        
-        
 
+        /***************************************************************************************************/
+        [Authorize(Roles = nameof(RoleType.Administrator))]
+        [HttpGet("dto/mapper/dapper/productoPorLote")]
+        public async Task<IActionResult> GetPostsDtoMapperDapper
+            ()
+        {
+            var productos = await _productoService.GetProductosPorLote();
+            var productosDto = _mapper.Map<IEnumerable<ProductoPorLote>>(productos);
+
+            var response = new ApiResponse<IEnumerable<ProductoPorLote>>(productosDto);
+
+            return Ok(response);
+        }
+        [Authorize(Roles = nameof(RoleType.Administrator))]
+        [HttpGet("dto/mapper/dapper/productosSinVenta")]
+        public async Task<IActionResult> GetProductosSinVenta
+            ()
+        {
+            var productos = await _productoService.GetProductosSinVenta();
+            var productosDto = _mapper.Map<IEnumerable<ProductoSinVentaDTO>>(productos);
+
+            var response = new ApiResponse<IEnumerable<ProductoSinVentaDTO>>(productosDto);
+
+            return Ok(response);
+        }
+        [Authorize(Roles = nameof(RoleType.Administrator))]
+        [HttpGet("mas-vendidos")]
+        public async Task<IActionResult> GetProductosMasVendidos([FromQuery] int limit = 5)
+        {
+            var result = await _productoService.GetProductosMasVendidos(limit);
+            return Ok(result);
+        }
+        [Authorize(Roles = nameof(RoleType.Administrator))]
+        [HttpGet("ganancias-por-lote")]
+        public async Task<IActionResult> GetGananciasPorLote()
+        {
+            var result = await _productoService.GetGananciasPorLote();
+            return Ok(result);
+        }
+        [Authorize(Roles = nameof(RoleType.Administrator))]
+        [HttpGet("dto/mapper/estadistica")]
+        public async Task<IActionResult> GetEstadisticaProductoPorCategoria()
+        {
+            var producto = await _productoService.GetEstadisticaProductoPorCategoria();
+            if (producto == null)
+                return NotFound(new { mensaje = "Producto no encontrado" });
+            var productoDto = _mapper.Map<ProductoDtoPorLote>(producto);
+            var response = new ApiResponse<ProductoDtoPorLote>(productoDto);
+            return Ok(response);
+        }
+
+
+        [Authorize(Roles = nameof(RoleType.Administrator))]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] ProductoDtoPorLote productoDto)
         {
@@ -133,6 +139,7 @@ namespace VentasLimpieza.Api.Controllers
         //    _productoService.UpdateProducto(producto);
         //    return Ok();
         //}
+        [Authorize(Roles = nameof(RoleType.Administrator))]
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] ProductoDtoPorLote productoDto)
         {
@@ -140,7 +147,7 @@ namespace VentasLimpieza.Api.Controllers
             await _productoService.UpdateProducto(producto);  
             return Ok();  
         }
-
+        [Authorize(Roles = nameof(RoleType.Administrator))]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

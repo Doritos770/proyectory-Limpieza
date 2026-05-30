@@ -9,8 +9,9 @@ using VentasLimpieza.Services.Interfaces;
 
 namespace VentasLimpieza.Api.Controllers
 {
-    //[Authorize(Roles = nameof(RoleType.Administrator))]
-    [Authorize(Roles = $"{nameof(RoleType.Administrator)},{nameof(RoleType.Supervisor)}")]
+    
+    [Authorize(Roles = nameof(RoleType.Administrator))]
+    //[Authorize(Roles = $"{nameof(RoleType.Administrator)},{nameof(RoleType.Supervisor)}")]
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
@@ -18,18 +19,23 @@ namespace VentasLimpieza.Api.Controllers
     {
         private readonly ISecurityService _securityService;
         private readonly IMapper _mapper;
+        private readonly IPasswordService _passwordService;
 
         public SecurityController(ISecurityService securityService,
-            IMapper mapper)
+            IMapper mapper,
+            IPasswordService passwordService)
         {
             _securityService = securityService;
             _mapper = mapper;
+            _passwordService = passwordService;
         }
+        [AllowAnonymous]
 
         [HttpPost]
         public async Task<IActionResult> Post(SecurityDto securityDto)
         {
             var security = _mapper.Map<Security>(securityDto);
+            security.Password = _passwordService.Hash(security.Password);
             await _securityService.RegisterUser(security);
 
             securityDto = _mapper.Map<SecurityDto>(security);

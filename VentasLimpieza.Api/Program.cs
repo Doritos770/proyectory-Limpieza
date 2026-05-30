@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using VentasLimpieza.Api.Filters;
+using VentasLimpieza.Core.CustomEntities;
 using VentasLimpieza.Core.Interfaces;
 using VentasLimpieza.Infrastructure.Data;
 using VentasLimpieza.Infrastructure.Mapping;
@@ -39,7 +40,12 @@ namespace VentasLimpieza.Api
             builder.Services.AddTransient<ICodigoseguridadService, CodigoseguridadService>();
             builder.Services.AddTransient<ISecurityService, SecurityService>();
             builder.Services.AddTransient<IPedidoService, PedidoService>();
+            //Para lo de hashes, el password service y asi
+            builder.Services.AddSingleton<IPasswordService, PasswordService>();
 
+
+            builder.Services.Configure<PasswordOptions>
+               (builder.Configuration.GetSection("PasswordOptions"));
 
             //aditamientos
             builder.Services.AddScoped(
@@ -130,9 +136,10 @@ namespace VentasLimpieza.Api
             {
                 app.MapOpenApi();
             }
-
+            app.UseAuthentication();  
             app.UseHttpsRedirection();
-            app.UseCors("AllowAll"); 
+            app.UseCors("AllowAll");
+            app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();
 

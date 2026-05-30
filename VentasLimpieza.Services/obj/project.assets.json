@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net10.0": {
       "AutoMapper/13.0.1": {
@@ -2142,23 +2142,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\doria\\.nuget\\packages\\": {},
+    "C:\\Users\\D E L L\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj",
+      "projectUniqueName": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj",
       "projectName": "VentasLimpieza.Services",
-      "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj",
-      "packagesPath": "C:\\Users\\doria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Services\\obj\\",
+      "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj",
+      "packagesPath": "C:\\Users\\D E L L\\.nuget\\packages\\",
+      "outputPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\doria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\D E L L\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2172,13 +2172,14 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj": {
-              "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj"
+            "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj": {
+              "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj"
             },
-            "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj"
+            "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj": {
+              "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj"
             }
           }
         }
@@ -2193,10 +2194,11 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "FluentValidation.AspNetCore": {
@@ -2224,7 +2226,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

@@ -6,9 +6,9 @@ namespace VentasLimpieza.Core.Enum
 {
     public enum RoleType
     {
-        Administrator,
-        Consumer,
-        Supervisor
+        Administrator ,
+        Consumer ,
+        Supervisor 
     }
 
 }
