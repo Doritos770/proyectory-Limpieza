@@ -160,3 +160,21 @@ C:\Users\doria\OneDrive\Escritorio\vannessa\ProyectoLimpieza\VentasLimpieza.Serv
 C:\Users\doria\OneDrive\Escritorio\vannessa\ProyectoLimpieza\VentasLimpieza.Services\obj\Debug\net10.0\refint\VentasLimpieza.Services.dll
 C:\Users\doria\OneDrive\Escritorio\vannessa\ProyectoLimpieza\VentasLimpieza.Services\obj\Debug\net10.0\VentasLimpieza.Services.pdb
 C:\Users\doria\OneDrive\Escritorio\vannessa\ProyectoLimpieza\VentasLimpieza.Services\obj\Debug\net10.0\ref\VentasLimpieza.Services.dll
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\bin\Debug\net10.0\VentasLimpieza.Services.deps.json
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\bin\Debug\net10.0\VentasLimpieza.Services.dll
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\bin\Debug\net10.0\VentasLimpieza.Services.pdb
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\bin\Debug\net10.0\VentasLimpieza.Core.dll
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\bin\Debug\net10.0\VentasLimpieza.Infrastructure.dll
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\bin\Debug\net10.0\VentasLimpieza.Core.pdb
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\bin\Debug\net10.0\VentasLimpieza.Infrastructure.pdb
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\obj\Debug\net10.0\VentasLimpieza.Services.csproj.AssemblyReference.cache
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\obj\Debug\net10.0\VentasLimpieza.Services.GeneratedMSBuildEditorConfig.editorconfig
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\obj\Debug\net10.0\VentasLimpieza.Services.AssemblyInfoInputs.cache
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\obj\Debug\net10.0\VentasLimpieza.Services.AssemblyInfo.cs
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\obj\Debug\net10.0\VentasLimpieza.Services.csproj.CoreCompileInputs.cache
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\obj\Debug\net10.0\VentasLimpieza.Services.sourcelink.json
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\obj\Debug\net10.0\VentasLi.821190FC.Up2Date
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\obj\Debug\net10.0\VentasLimpieza.Services.dll
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\obj\Debug\net10.0\refint\VentasLimpieza.Services.dll
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\obj\Debug\net10.0\VentasLimpieza.Services.pdb
+F:\UNIVERSIDAD\5TO SEMESTRE\TECNOLOGIAS WEB 1\proyecto\proyectory-Limpieza\VentasLimpieza.Services\obj\Debug\net10.0\ref\VentasLimpieza.Services.dll

@@ -4,6 +4,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using VentasLimpieza.Core.Entities;
+using VentasLimpieza.Core.Enum;
 using VentasLimpieza.Services.Interfaces;
 
 namespace SocialMedia.Api.Controllers
@@ -14,12 +15,13 @@ namespace SocialMedia.Api.Controllers
     {
         private readonly IConfiguration _configuration;
         private readonly ISecurityService _securityService;
-
+        private readonly IPasswordService _passwordService;
         public TokenController(IConfiguration configuration,
-            ISecurityService securityService)
+            ISecurityService securityService, IPasswordService passwordService)
         {
             _configuration = configuration;
             _securityService = securityService;
+            _passwordService = passwordService;
         }
 
         [HttpPost]
@@ -39,7 +41,9 @@ namespace SocialMedia.Api.Controllers
         private async Task<(bool, Security)> IsValidUser(UserLogin userLogin)
         {
             var user = await _securityService.GetLoginByCredentials(userLogin);
-            return (user != null, user);
+            var isValid = _passwordService.Check(user.Password, userLogin.Password);
+            //return (user != null, user);
+            return (isValid, user);
         }
 
         private string GenerateToken(Security security)
@@ -59,6 +63,7 @@ namespace SocialMedia.Api.Controllers
                 new Claim("Name", security.Name),
                 new Claim("Login", security.Login),
                 new Claim(ClaimTypes.Role, security.Role.ToString())
+                //new Claim(ClaimTypes.Role, Enum.GetName(typeof(RoleType), security.Role))
             };
 
             var payload =

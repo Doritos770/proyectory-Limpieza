@@ -1,11 +1,14 @@
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using VentasLimpieza.core.Dtos;
+using VentasLimpieza.Core.Enum;
 using VentasLimpieza.Services.Interfaces;
 
 namespace VentasLimpieza.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class PedidoController : ControllerBase
@@ -16,7 +19,7 @@ namespace VentasLimpieza.Api.Controllers
         {
             _pedidoService = pedidoService;
         }
-
+        
         [HttpPost]
         public async Task<IActionResult> CrearPedido([FromBody] CrearPedidoDto pedidoDto)
         {
@@ -28,21 +31,21 @@ namespace VentasLimpieza.Api.Controllers
             var result = await _pedidoService.CrearPedidoAsync(pedidoDto);
             return CreatedAtAction(nameof(ObtenerPedidoPorId), new { id = result.Id }, result);
         }
-
+        
         [HttpGet]
         public async Task<IActionResult> ObtenerPedidos()
         {
             var result = await _pedidoService.ObtenerPedidosAsync();
             return Ok(result);
         }
-
+        [Authorize(Roles = nameof(RoleType.Administrator))]
         [HttpGet("{id}")]
         public async Task<IActionResult> ObtenerPedidoPorId(int id)
         {
             var result = await _pedidoService.ObtenerPedidoPorIdAsync(id);
             return Ok(result);
         }
-
+        [Authorize(Roles = nameof(RoleType.Administrator))]
         [HttpPut("{id}/estado")]
         public async Task<IActionResult> ActualizarEstadoPedido(int id, [FromBody] string estado)
         {
@@ -54,7 +57,7 @@ namespace VentasLimpieza.Api.Controllers
             await _pedidoService.ActualizarEstadoPedidoAsync(id, estado);
             return NoContent();
         }
-
+        [Authorize(Roles = nameof(RoleType.Administrator))]
         [HttpGet("resumen-general")]
         public async Task<IActionResult> GetResumenGeneralVentas()
         {

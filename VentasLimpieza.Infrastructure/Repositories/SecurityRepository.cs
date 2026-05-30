@@ -21,8 +21,8 @@ namespace VentasLimpieza.Infrastructure.Repositories
             GetLoginByCredentials(UserLogin userLogin)
         {
             return await _entities.FirstOrDefaultAsync
-                (x => x.Login == userLogin.User
-                && x.Password == userLogin.Password);
+                (x => x.Login == userLogin.User);
+            //&& x.Password == userLogin.Password);
         }
     }
 }

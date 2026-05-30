@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Azure;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SocialMedia.Api.Responses;
 using VentasLimpieza.core.Dtos;
@@ -7,6 +8,7 @@ using VentasLimpieza.Core.Auxiliares;
 using VentasLimpieza.Core.CustomEntities;
 using VentasLimpieza.Core.Dtos;
 using VentasLimpieza.Core.Entities;
+using VentasLimpieza.Core.Enum;
 using VentasLimpieza.Core.QueryFilter;
 using VentasLimpieza.Services.Interfaces;
 using VentasLimpieza.Services.Validators;
@@ -14,6 +16,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace VentasLimpieza.Api.Controllers
 {
+    [Authorize(Roles = nameof(RoleType.Administrator))]
     [Route("api/[controller]")] // api/Loteproducto   
     [ApiController]
     public class LoteproductoController : ControllerBase
