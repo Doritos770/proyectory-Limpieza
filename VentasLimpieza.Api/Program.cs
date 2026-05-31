@@ -20,17 +20,32 @@ namespace VentasLimpieza.Api
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Configuración base
+            builder.Configuration.Sources.Clear();
+            builder.Configuration
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: false)
+                .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
+                .AddEnvironmentVariables(); // ¡ESTO ES CLAVE PARA AZURE
+
+
             builder.Services.AddControllers();
 
             builder.Services.AddOpenApi();
 
             // Configurar BD
-            var connectionString = builder.Configuration.GetConnectionString("ConnectionMySql");
-            builder.Services.AddDbContext<VentasLimpiezaContext>(options =>
-                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+            //var connectionString = builder.Configuration.GetConnectionString("ConnectionMySql");
+            //builder.Services.AddDbContext<VentasLimpiezaContext>(options =>
+            //    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
             // Registrar repositorios y servicios
             // builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>(); 
+
+            #region Configurar la BD MySql
+            var connectionString = builder.Configuration.GetConnectionString("ConnectionMySql");
+            builder.Services.AddDbContext<VentasLimpiezaContext>(options =>
+                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+            #endregion
 
             //services
             builder.Services.AddTransient<IUsuarioService, UsuariosService>();
@@ -49,7 +64,7 @@ namespace VentasLimpieza.Api
 
             //aditamientos
             builder.Services.AddScoped(
-                typeof(IBaseRepository<>), 
+                typeof(IBaseRepository<>),
                 typeof(BaseRepository<>));
             builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
             builder.Services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
@@ -155,7 +170,7 @@ namespace VentasLimpieza.Api
 
             var app = builder.Build();
 
-            
+
             //Usar Swagger
             if (app.Environment.IsDevelopment())
             {
@@ -166,16 +181,21 @@ namespace VentasLimpieza.Api
                     options.RoutePrefix = string.Empty; //Swagger sera accesible en la raíz
                 });
             }
+            //app.UseSwagger();
+            //app.UseSwaggerUI(options =>
+            //{
+            //    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Backend Ventra Limpieza API v1");
+            //    options.RoutePrefix = string.Empty;
+            //});
 
 
-
-            app.UseMiddleware<ExceptionHandlingMiddleware>(); 
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
 
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();
             }
-            app.UseAuthentication();  
+            app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseCors("AllowAll");
             app.UseAuthentication();
