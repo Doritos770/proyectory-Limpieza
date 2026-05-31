@@ -172,15 +172,12 @@ namespace VentasLimpieza.Api
 
 
             //Usar Swagger
-            if (app.Environment.IsDevelopment())
+            app.UseSwagger();
+            app.UseSwaggerUI(options =>
             {
-                app.UseSwagger();
-                app.UseSwaggerUI(options =>
-                {
-                    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Backend Ventra Limpieza API v1");
-                    options.RoutePrefix = string.Empty; //Swagger sera accesible en la raíz
-                });
-            }
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "Backend Ventra Limpieza API v1");
+                options.RoutePrefix = string.Empty;
+            });
             //app.UseSwagger();
             //app.UseSwaggerUI(options =>
             //{
