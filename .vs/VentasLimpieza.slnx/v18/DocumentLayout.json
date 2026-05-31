@@ -1,46 +1,74 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\",
+  "WorkspaceRootPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|c:\\users\\doria\\onedrive\\escritorio\\vannessa\\proyectolimpieza\\ventaslimpieza.core\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|solutionrelative:ventaslimpieza.core\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|solutionrelative:ventaslimpieza.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|c:\\users\\doria\\onedrive\\escritorio\\vannessa\\proyectolimpieza\\ventaslimpieza.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|solutionrelative:ventaslimpieza.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|solutionrelative:ventaslimpieza.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|c:\\users\\doria\\onedrive\\escritorio\\vannessa\\proyectolimpieza\\ventaslimpieza.core\\customentities\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|solutionrelative:ventaslimpieza.core\\customentities\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.api\\ventaslimpieza.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|solutionrelative:ventaslimpieza.api\\ventaslimpieza.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|c:\\users\\doria\\onedrive\\escritorio\\vannessa\\proyectolimpieza\\ventaslimpieza.core\\entities\\loteproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|solutionrelative:ventaslimpieza.core\\entities\\loteproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9AF5B10-0E4E-42F3-815B-BE1977E00083}|VentasLimpieza.Services\\VentasLimpieza.Services.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.services\\ventaslimpieza.services.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{F9AF5B10-0E4E-42F3-815B-BE1977E00083}|VentasLimpieza.Services\\VentasLimpieza.Services.csproj|solutionrelative:ventaslimpieza.services\\ventaslimpieza.services.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|c:\\users\\doria\\onedrive\\escritorio\\vannessa\\proyectolimpieza\\ventaslimpieza.core\\queryfilter\\categoriaqueryfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|solutionrelative:ventaslimpieza.core\\queryfilter\\categoriaqueryfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.core\\ventaslimpieza.core.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|solutionrelative:ventaslimpieza.core\\ventaslimpieza.core.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|c:\\users\\doria\\onedrive\\escritorio\\vannessa\\proyectolimpieza\\ventaslimpieza.api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|solutionrelative:ventaslimpieza.api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{249BA53C-5683-81AD-F241-26A23D130482}|VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.infrastructure\\ventaslimpieza.infrastructure.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{249BA53C-5683-81AD-F241-26A23D130482}|VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj|solutionrelative:ventaslimpieza.infrastructure\\ventaslimpieza.infrastructure.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|c:\\users\\doria\\onedrive\\escritorio\\vannessa\\proyectolimpieza\\ventaslimpieza.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|solutionrelative:ventaslimpieza.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.api\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|solutionrelative:ventaslimpieza.api\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|c:\\users\\doria\\onedrive\\escritorio\\vannessa\\proyectolimpieza\\ventaslimpieza.api\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|solutionrelative:ventaslimpieza.api\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|c:\\users\\doria\\onedrive\\escritorio\\vannessa\\proyectolimpieza\\ventaslimpieza.api\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.api\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|solutionrelative:ventaslimpieza.api\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|c:\\users\\doria\\onedrive\\escritorio\\vannessa\\proyectolimpieza\\ventaslimpieza.api\\controllers\\loteproductocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.api\\controllers\\loteproductocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|solutionrelative:ventaslimpieza.api\\controllers\\loteproductocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.core\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|solutionrelative:ventaslimpieza.core\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|solutionrelative:ventaslimpieza.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.core\\customentities\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|solutionrelative:ventaslimpieza.core\\customentities\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.core\\entities\\loteproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|solutionrelative:ventaslimpieza.core\\entities\\loteproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.core\\queryfilter\\categoriaqueryfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E61A7FC-F7E2-DB6C-814E-3D2F1A986D1C}|VentasLimpieza.Core\\VentasLimpieza.Core.csproj|solutionrelative:ventaslimpieza.core\\queryfilter\\categoriaqueryfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|solutionrelative:ventaslimpieza.api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|solutionrelative:ventaslimpieza.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|f:\\universidad\\5to semestre\\tecnologias web 1\\proyecto\\proyectory-limpieza\\ventaslimpieza.api\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB215D5-D33D-D426-E1BA-C9B13FBD0511}|VentasLimpieza.Api\\VentasLimpieza.Api.csproj|solutionrelative:ventaslimpieza.api\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,119 +78,156 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VentasLimpieza.Core",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj",
+              "RelativeDocumentMoniker": "VentasLimpieza.Core\\VentasLimpieza.Core.csproj",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj",
+              "RelativeToolTip": "VentasLimpieza.Core\\VentasLimpieza.Core.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-31T02:54:04.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VentasLimpieza.Infrastructure",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj",
+              "RelativeToolTip": "VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-31T02:51:30.562Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "VentasLimpieza.Api\\appsettings.json",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\appsettings.json*",
+              "RelativeToolTip": "VentasLimpieza.Api\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-30T22:33:23.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\Program.cs",
+              "RelativeDocumentMoniker": "VentasLimpieza.Api\\Program.cs",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\Program.cs",
+              "RelativeToolTip": "VentasLimpieza.Api\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowBQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T01:51:24.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VentasLimpieza.Api",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\VentasLimpieza.Api.csproj",
+              "RelativeDocumentMoniker": "VentasLimpieza.Api\\VentasLimpieza.Api.csproj",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\VentasLimpieza.Api.csproj",
+              "RelativeToolTip": "VentasLimpieza.Api\\VentasLimpieza.Api.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-31T02:54:30.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VentasLimpieza.Services",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj",
+              "RelativeDocumentMoniker": "VentasLimpieza.Services\\VentasLimpieza.Services.csproj",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj",
+              "RelativeToolTip": "VentasLimpieza.Services\\VentasLimpieza.Services.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-31T02:54:49.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "VentasLimpieza.Api\\Controllers\\ProductoController.cs",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "VentasLimpieza.Api\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T22:33:17.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Categoria.cs",
-              "DocumentMoniker": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\Entities\\Categoria.cs",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\Entities\\Categoria.cs",
               "RelativeDocumentMoniker": "VentasLimpieza.Core\\Entities\\Categoria.cs",
-              "ToolTip": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\Entities\\Categoria.cs",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\Entities\\Categoria.cs",
               "RelativeToolTip": "VentasLimpieza.Core\\Entities\\Categoria.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-30T20:41:27.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\Entities\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "VentasLimpieza.Core\\Entities\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\Entities\\BaseEntity.cs",
-              "RelativeToolTip": "VentasLimpieza.Core\\Entities\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T20:41:26.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ErrorResponse.cs",
-              "DocumentMoniker": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\CustomEntities\\ErrorResponse.cs",
-              "RelativeDocumentMoniker": "VentasLimpieza.Core\\CustomEntities\\ErrorResponse.cs",
-              "ToolTip": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\CustomEntities\\ErrorResponse.cs",
-              "RelativeToolTip": "VentasLimpieza.Core\\CustomEntities\\ErrorResponse.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowCMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T20:39:28.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Loteproducto.cs",
-              "DocumentMoniker": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\Entities\\Loteproducto.cs",
-              "RelativeDocumentMoniker": "VentasLimpieza.Core\\Entities\\Loteproducto.cs",
-              "ToolTip": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\Entities\\Loteproducto.cs",
-              "RelativeToolTip": "VentasLimpieza.Core\\Entities\\Loteproducto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T20:38:02.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "CategoriaQueryFilter.cs",
-              "DocumentMoniker": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\QueryFilter\\CategoriaQueryFilter.cs",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\QueryFilter\\CategoriaQueryFilter.cs",
               "RelativeDocumentMoniker": "VentasLimpieza.Core\\QueryFilter\\CategoriaQueryFilter.cs",
-              "ToolTip": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\QueryFilter\\CategoriaQueryFilter.cs",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\QueryFilter\\CategoriaQueryFilter.cs",
               "RelativeToolTip": "VentasLimpieza.Core\\QueryFilter\\CategoriaQueryFilter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T20:37:10.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T20:37:10.052Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\Controllers\\UsuarioController.cs",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "VentasLimpieza.Api\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\Controllers\\UsuarioController.cs",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "VentasLimpieza.Api\\Controllers\\UsuarioController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T20:35:04.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T20:35:04.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TokenController.cs",
-              "DocumentMoniker": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\Controllers\\TokenController.cs",
-              "RelativeDocumentMoniker": "VentasLimpieza.Api\\Controllers\\TokenController.cs",
-              "ToolTip": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\Controllers\\TokenController.cs",
-              "RelativeToolTip": "VentasLimpieza.Api\\Controllers\\TokenController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "LoteproductoController.cs",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\Controllers\\LoteproductoController.cs",
+              "RelativeDocumentMoniker": "VentasLimpieza.Api\\Controllers\\LoteproductoController.cs",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\Controllers\\LoteproductoController.cs",
+              "RelativeToolTip": "VentasLimpieza.Api\\Controllers\\LoteproductoController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAH8BAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T20:35:01.295Z",
+              "WhenOpened": "2026-05-30T20:19:00.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "TestController.cs",
-              "DocumentMoniker": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\Controllers\\TestController.cs",
-              "RelativeDocumentMoniker": "VentasLimpieza.Api\\Controllers\\TestController.cs",
-              "ToolTip": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\Controllers\\TestController.cs",
-              "RelativeToolTip": "VentasLimpieza.Api\\Controllers\\TestController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T20:34:59.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "PedidoController.cs",
-              "DocumentMoniker": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\Controllers\\PedidoController.cs",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\Controllers\\PedidoController.cs",
               "RelativeDocumentMoniker": "VentasLimpieza.Api\\Controllers\\PedidoController.cs",
-              "ToolTip": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\Controllers\\PedidoController.cs",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\Controllers\\PedidoController.cs",
               "RelativeToolTip": "VentasLimpieza.Api\\Controllers\\PedidoController.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -171,16 +236,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoteproductoController.cs",
-              "DocumentMoniker": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\Controllers\\LoteproductoController.cs",
-              "RelativeDocumentMoniker": "VentasLimpieza.Api\\Controllers\\LoteproductoController.cs",
-              "ToolTip": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Api\\Controllers\\LoteproductoController.cs",
-              "RelativeToolTip": "VentasLimpieza.Api\\Controllers\\LoteproductoController.cs",
-              "ViewState": "AgIAAKMBAAAAAAAAAAAqwLIBAAAvAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Loteproducto.cs",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\Entities\\Loteproducto.cs",
+              "RelativeDocumentMoniker": "VentasLimpieza.Core\\Entities\\Loteproducto.cs",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\Entities\\Loteproducto.cs",
+              "RelativeToolTip": "VentasLimpieza.Core\\Entities\\Loteproducto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T20:19:00.709Z",
+              "WhenOpened": "2026-05-30T20:38:02.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ErrorResponse.cs",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\CustomEntities\\ErrorResponse.cs",
+              "RelativeDocumentMoniker": "VentasLimpieza.Core\\CustomEntities\\ErrorResponse.cs",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\CustomEntities\\ErrorResponse.cs",
+              "RelativeToolTip": "VentasLimpieza.Core\\CustomEntities\\ErrorResponse.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T20:39:28.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "VentasLimpieza.Core\\Entities\\BaseEntity.cs",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "VentasLimpieza.Core\\Entities\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T20:41:26.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TokenController.cs",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\Controllers\\TokenController.cs",
+              "RelativeDocumentMoniker": "VentasLimpieza.Api\\Controllers\\TokenController.cs",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\Controllers\\TokenController.cs",
+              "RelativeToolTip": "VentasLimpieza.Api\\Controllers\\TokenController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T20:35:01.295Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "VentasLimpieza.Api\\Controllers\\TestController.cs",
+              "ToolTip": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Api\\Controllers\\TestController.cs",
+              "RelativeToolTip": "VentasLimpieza.Api\\Controllers\\TestController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T20:34:59.616Z"
             }
           ]
         }
