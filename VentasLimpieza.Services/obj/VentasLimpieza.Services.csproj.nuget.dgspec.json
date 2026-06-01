@@ -76,6 +76,11 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
         }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
+        }
       }
     },
     "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj": {
@@ -182,6 +187,11 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
         }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
+        }
       }
     },
     "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Services\\VentasLimpieza.Services.csproj": {
@@ -266,6 +276,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
         }
       }
     }
