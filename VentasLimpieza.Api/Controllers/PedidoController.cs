@@ -9,7 +9,7 @@ using VentasLimpieza.Services.Interfaces;
 
 namespace VentasLimpieza.Api.Controllers
 {
-  //  [Authorize]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class PedidoController : ControllerBase
@@ -81,7 +81,7 @@ namespace VentasLimpieza.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        [Authorize(Roles = nameof(RoleType.Administrator))]
+
         [HttpGet("{id}")]
         public async Task<IActionResult> ObtenerPedidoPorId(int id)
         {

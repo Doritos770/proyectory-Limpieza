@@ -13,7 +13,7 @@ using VentasLimpieza.Services.Interfaces;
 
 namespace VentasLimpieza.Api.Controllers
 {
- //   [Authorize]
+    [Authorize(Roles = nameof(RoleType.Administrator))]
     [Route("api/[controller]")] // api/producto
     [ApiController]
     public class ProductoController : ControllerBase
@@ -194,7 +194,7 @@ namespace VentasLimpieza.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        [Authorize(Roles = nameof(RoleType.Administrator))]
+
         [HttpGet("dto/mapper/estadistica")]
         public async Task<IActionResult> GetEstadisticaProductoPorCategoria()
         {
@@ -223,7 +223,7 @@ namespace VentasLimpieza.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        [Authorize(Roles = nameof(RoleType.Administrator))]
+
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] ProductoDtoPorLote productoDto)
         {
