@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj": {}
+    "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj": {}
   },
   "projects": {
-    "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj": {
+    "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj",
+        "projectUniqueName": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj",
         "projectName": "VentasLimpieza.Core",
-        "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj",
-        "packagesPath": "C:\\Users\\D E L L\\.nuget\\packages\\",
-        "outputPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\obj\\",
+        "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj",
+        "packagesPath": "C:\\Users\\doria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\D E L L\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\doria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -31,7 +31,6 @@
         },
         "frameworks": {
           "net9.0": {
-            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {}
           }
@@ -46,11 +45,10 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net9.0": {
-          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
             "Swashbuckle.AspNetCore.Annotations": {
@@ -69,34 +67,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.13, 9.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.13, 9.0.13]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.13, 9.0.13]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "linux-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj": {
+    "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj",
         "projectName": "VentasLimpieza.Infrastructure",
-        "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\D E L L\\.nuget\\packages\\",
-        "outputPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\VentasLimpieza.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\doria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\D E L L\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\doria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -110,11 +117,10 @@
         },
         "frameworks": {
           "net9.0": {
-            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj": {
-                "projectPath": "F:\\UNIVERSIDAD\\5TO SEMESTRE\\TECNOLOGIAS WEB 1\\proyecto\\proyectory-Limpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj"
+              "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj": {
+                "projectPath": "C:\\Users\\doria\\OneDrive\\Escritorio\\vannessa\\ProyectoLimpieza\\VentasLimpieza.Core\\VentasLimpieza.Core.csproj"
               }
             }
           }
@@ -129,11 +135,10 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net9.0": {
-          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
             "AutoMapper": {
@@ -180,17 +185,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.13, 9.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.13, 9.0.13]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.13, 9.0.13]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "linux-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

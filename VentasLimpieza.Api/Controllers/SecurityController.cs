@@ -11,7 +11,6 @@ using VentasLimpieza.Services.Interfaces;
 namespace VentasLimpieza.Api.Controllers
 {
     
-    [Authorize(Roles = nameof(RoleType.Administrator))]
     //[Authorize(Roles = $"{nameof(RoleType.Administrator)},{nameof(RoleType.Supervisor)}")]
     [Produces("application/json")]
     [Route("api/[controller]")]
@@ -30,7 +29,6 @@ namespace VentasLimpieza.Api.Controllers
             _mapper = mapper;
             _passwordService = passwordService;
         }
-        [AllowAnonymous]
 
         /// <summary>
         /// Registra un nuevo usuario en el sistema con un rol específico (Ej. Administrador o Supervisor).

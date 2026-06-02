@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using VentasLimpieza.core.Dtos;
+using VentasLimpieza.Core.Auxiliares;
 
 namespace VentasLimpieza.Services.Interfaces
 {
@@ -10,6 +11,6 @@ namespace VentasLimpieza.Services.Interfaces
         Task<IEnumerable<PedidoDto>> ObtenerPedidosAsync();
         Task<PedidoDto> ObtenerPedidoPorIdAsync(int id);
         Task ActualizarEstadoPedidoAsync(int pedidoId, string estado);
-        Task<VentasLimpieza.Core.Auxiliares.resumen_venta> GetResumenGeneralVentasAsync();
+        Task<resumen_venta> GetResumenGeneralVentasAsync();
     }
 }

@@ -18,14 +18,5 @@ namespace VentasLimpieza.Infrastructure.Repositories
             _dapper = dapper;
         }
 
-        //public async Task<Detallepedido> RegistrarPedido(Detallepedido detallepedido)
-        //{
-        //    int ultimoId = await _entities.MaxAsync(d => (int?)d.Id) ?? 0;
-        //    var pedido =new  Detallepedido
-        //    {
-        //        Id= ultimoId,
-                
-        //    }
-        //}
     }
 }

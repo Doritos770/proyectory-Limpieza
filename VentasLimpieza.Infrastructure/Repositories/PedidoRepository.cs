@@ -5,6 +5,7 @@ using VentasLimpieza.Core.Exceptions;
 using VentasLimpieza.Core.Interfaces;
 using VentasLimpieza.Core.Enum;
 using VentasLimpieza.Infrastructure.Data;
+using VentasLimpieza.Core.Auxiliares;
 
 namespace VentasLimpieza.Infrastructure.Repositories
 {
@@ -20,16 +21,16 @@ namespace VentasLimpieza.Infrastructure.Repositories
 
 
 
-        public async Task<VentasLimpieza.Core.Auxiliares.resumen_venta> GetResumenGeneralVentas()
+        public async Task<resumen_venta> GetResumenGeneralVentas()
         {
             var sql = _dapper.Provider switch
             {
-                DataBaseProvider.MySql => VentasLimpieza.Infrastructure.Queries.sqlEstadistica.ResumenGeneral,
+                DataBaseProvider.MySql => Queries.sqlEstadistica.ResumenGeneral,
                 _ => throw new NotSupportedException("Provider no soportado")
             };
 
-            var result = await _dapper.QueryAsync<VentasLimpieza.Core.Auxiliares.resumen_venta>(sql);
-            return result.FirstOrDefault() ?? new VentasLimpieza.Core.Auxiliares.resumen_venta { TotalPedidos = 0, TotalIngresos = 0 };
+            var result = await _dapper.QueryAsync<resumen_venta>(sql);
+            return result.FirstOrDefault() ?? new resumen_venta { TotalPedidos = 0, TotalIngresos = 0 };
         }
        
     }

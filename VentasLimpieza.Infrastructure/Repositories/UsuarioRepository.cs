@@ -74,24 +74,24 @@ namespace VentasLimpieza.Infrastructure.Repositories
             }
         }
 
-        public async Task<VentasLimpieza.Core.Auxiliares.pedido_usuario> GetEstadisticasPedidos(int usuarioId)
+        public async Task<pedido_usuario> GetEstadisticasPedidos(int usuarioId)
         {
             var sqlResumen = _dapper.Provider switch
             {
-                DataBaseProvider.MySql => VentasLimpieza.Infrastructure.Queries.sqlEstadistica.PedidosPorUsuario,
+                DataBaseProvider.MySql => sqlEstadistica.PedidosPorUsuario,
                 _ => throw new NotSupportedException("Provider no soportado")
             };
 
             var sqlLista = _dapper.Provider switch
             {
-                DataBaseProvider.MySql => VentasLimpieza.Infrastructure.Queries.sqlEstadistica.PedidosListaPorUsuario,
+                DataBaseProvider.MySql => sqlEstadistica.PedidosListaPorUsuario,
                 _ => throw new NotSupportedException("Provider no soportado")
             };
 
-            var result = await _dapper.QueryAsync<VentasLimpieza.Core.Auxiliares.pedido_usuario>(sqlResumen, new { UsuarioId = usuarioId });
-            var resumen = result.FirstOrDefault() ?? new VentasLimpieza.Core.Auxiliares.pedido_usuario { CantidadPedidos = 0, TotalGastado = 0 };
+            var result = await _dapper.QueryAsync<pedido_usuario>(sqlResumen, new { UsuarioId = usuarioId });
+            var resumen = result.FirstOrDefault() ?? new pedido_usuario { CantidadPedidos = 0, TotalGastado = 0 };
 
-            var listaResult = await _dapper.QueryAsync<VentasLimpieza.Core.Auxiliares.pedido_simple_usuario>(sqlLista, new { UsuarioId = usuarioId });
+            var listaResult = await _dapper.QueryAsync<pedido_simple_usuario>(sqlLista, new { UsuarioId = usuarioId });
             resumen.Pedidos = listaResult.ToList();
 
             return resumen;

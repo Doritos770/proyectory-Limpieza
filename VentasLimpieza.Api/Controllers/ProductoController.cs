@@ -13,7 +13,7 @@ using VentasLimpieza.Services.Interfaces;
 
 namespace VentasLimpieza.Api.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = nameof(RoleType.Administrator))]
     [Route("api/[controller]")] // api/producto
     [ApiController]
     public class ProductoController : ControllerBase
@@ -108,16 +108,12 @@ namespace VentasLimpieza.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        [Authorize(Roles = nameof(RoleType.Administrator))]
+       // [Authorize(Roles = nameof(RoleType.Administrator))]
         [HttpGet("dto/mapper/dapper/productoPorLote")]
-        public async Task<IActionResult> GetPostsDtoMapperDapper
-            ()
+        public async Task<IActionResult> GetPostsDtoMapperDapper()
         {
             var productos = await _productoService.GetProductosPorLote();
-            var productosDto = _mapper.Map<IEnumerable<ProductoPorLote>>(productos);
-
-            var response = new ApiResponse<IEnumerable<ProductoPorLote>>(productosDto);
-
+            var response = new ApiResponse<IEnumerable<ProductoPorLote>>(productos);
             return Ok(response);
         }
         /// <summary>
@@ -133,7 +129,6 @@ namespace VentasLimpieza.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        [Authorize(Roles = nameof(RoleType.Administrator))]
         [HttpGet("dto/mapper/dapper/productosSinVenta")]
         public async Task<IActionResult> GetProductosSinVenta
             ()
@@ -155,11 +150,10 @@ namespace VentasLimpieza.Api.Controllers
         /// <response code="401">No autorizado.</response>
         /// <response code="403">Se requiere rol de Administrador.</response>
         /// <response code="500">Error interno del servidor.</response>
-        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(IEnumerable<VentasLimpieza.Core.Auxiliares.producto_mas_vendido>))]
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(IEnumerable<producto_mas_vendido>))]
         [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        [Authorize(Roles = nameof(RoleType.Administrator))]
         [HttpGet("mas-vendidos")]
         public async Task<IActionResult> GetProductosMasVendidos([FromQuery] int limit = 5)
         {
@@ -175,11 +169,10 @@ namespace VentasLimpieza.Api.Controllers
         /// <response code="401">No autorizado.</response>
         /// <response code="403">Se requiere rol de Administrador.</response>
         /// <response code="500">Error interno del servidor.</response>
-        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(IEnumerable<VentasLimpieza.Core.Auxiliares.ganancia_lote>))]
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(IEnumerable<ganancia_lote>))]
         [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        [Authorize(Roles = nameof(RoleType.Administrator))]
         [HttpGet("ganancias-por-lote")]
         public async Task<IActionResult> GetGananciasPorLote()
         {
@@ -201,7 +194,7 @@ namespace VentasLimpieza.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        [Authorize(Roles = nameof(RoleType.Administrator))]
+
         [HttpGet("dto/mapper/estadistica")]
         public async Task<IActionResult> GetEstadisticaProductoPorCategoria()
         {
@@ -230,7 +223,7 @@ namespace VentasLimpieza.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        [Authorize(Roles = nameof(RoleType.Administrator))]
+
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] ProductoDtoPorLote productoDto)
         {
@@ -262,7 +255,7 @@ namespace VentasLimpieza.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        [Authorize(Roles = nameof(RoleType.Administrator))]
+
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] ProductoDtoPorLote productoDto)
         {
@@ -286,7 +279,6 @@ namespace VentasLimpieza.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        [Authorize(Roles = nameof(RoleType.Administrator))]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
