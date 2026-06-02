@@ -5,6 +5,7 @@ using System.Net;
 using System.Threading.Tasks;
 using AutoMapper;
 using VentasLimpieza.core.Dtos;
+using VentasLimpieza.Core.Auxiliares;
 using VentasLimpieza.Core.Entities;
 using VentasLimpieza.Core.Exceptions;
 using VentasLimpieza.Core.Interfaces;
@@ -168,7 +169,7 @@ namespace VentasLimpieza.Services.Services
             await _unitOfWork.SaveChangesAsync();
         }
 
-        public async Task<VentasLimpieza.Core.Auxiliares.resumen_venta> GetResumenGeneralVentasAsync()
+        public async Task<resumen_venta> GetResumenGeneralVentasAsync()
         {
             return await _unitOfWork.PedidoRepository.GetResumenGeneralVentas();
         }

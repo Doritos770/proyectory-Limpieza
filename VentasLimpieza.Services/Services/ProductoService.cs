@@ -7,6 +7,7 @@ using VentasLimpieza.Core.QueryFilter;
 using VentasLimpieza.Services.Interfaces;
 using VentasLimpieza.Services.Validators;
 using VentasLimpieza.Core.Enum;
+using VentasLimpieza.Core.Auxiliares;
 
 namespace VentasLimpieza.Services.Services
 {
@@ -208,17 +209,17 @@ namespace VentasLimpieza.Services.Services
             return productosAgotados;
         }
 
-        public async Task<IEnumerable<VentasLimpieza.Core.Auxiliares.producto_mas_vendido>> GetProductosMasVendidos(int limit)
+        public async Task<IEnumerable<producto_mas_vendido>> GetProductosMasVendidos(int limit)
         {
             return await _unitOfWork.ProductoRepository.GetProductosMasVendidos(limit);
         }
 
-        public async Task<IEnumerable<VentasLimpieza.Core.Auxiliares.ganancia_lote>> GetGananciasPorLote()
+        public async Task<IEnumerable<ganancia_lote>> GetGananciasPorLote()
         {
             return await _unitOfWork.ProductoRepository.GetGananciasPorLote();
         }
 
-        public async Task<IEnumerable<Producto>> GetProductosPorLote()
+        public async Task<IEnumerable<ProductoPorLote>> GetProductosPorLote()
         {
             return await _unitOfWork.ProductoRepository.GetProductosPorLote();
         }

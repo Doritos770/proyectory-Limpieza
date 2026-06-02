@@ -9,7 +9,7 @@ using VentasLimpieza.Services.Interfaces;
 
 namespace VentasLimpieza.Api.Controllers
 {
-    [Authorize]
+  //  [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class PedidoController : ControllerBase
@@ -107,7 +107,6 @@ namespace VentasLimpieza.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        [Authorize(Roles = nameof(RoleType.Administrator))]
         [HttpPut("{id}/estado")]
         public async Task<IActionResult> ActualizarEstadoPedido(int id, [FromBody] string estado)
         {
@@ -132,7 +131,6 @@ namespace VentasLimpieza.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        [Authorize(Roles = nameof(RoleType.Administrator))]
         [HttpGet("resumen-general")]
         public async Task<IActionResult> GetResumenGeneralVentas()
         {

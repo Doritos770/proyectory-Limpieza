@@ -5,5 +5,5 @@ namespace VentasLimpieza.Core.Interfaces;
 
 public interface IPedidoRepository : IBaseRepository<Pedido>
 {
-    Task<VentasLimpieza.Core.Auxiliares.resumen_venta> GetResumenGeneralVentas();
+    Task<resumen_venta> GetResumenGeneralVentas();
 }

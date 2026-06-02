@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using VentasLimpieza.core.Interfaces;
+using VentasLimpieza.Core.Auxiliares;
 using VentasLimpieza.Core.Entities;
 using VentasLimpieza.Core.Enum;
 using VentasLimpieza.Core.Interfaces;
@@ -45,7 +46,7 @@ namespace VentasLimpieza.Infrastructure.Repositories
         //        throw new Exception(ex.Message);
         //    }
         //}
-        public async Task<IEnumerable<Producto>> GetProductosPorLote()
+        public async Task<IEnumerable<ProductoPorLote>> GetProductosPorLote()
         {
             try
             {
@@ -55,7 +56,7 @@ namespace VentasLimpieza.Infrastructure.Repositories
                     _ => throw new NotSupportedException("Provider no soportado")
                 };
 
-                return await _dapper.QueryAsync<Producto>(sql);
+                return await _dapper.QueryAsync<ProductoPorLote>(sql);
             }
             catch (Exception ex)
             {
@@ -104,25 +105,25 @@ namespace VentasLimpieza.Infrastructure.Repositories
             return productosAgotados;
         }
 
-        public async Task<IEnumerable<VentasLimpieza.Core.Auxiliares.producto_mas_vendido>> GetProductosMasVendidos(int limit)
+        public async Task<IEnumerable<producto_mas_vendido>> GetProductosMasVendidos(int limit)
         {
             var sql = _dapper.Provider switch
             {
-                DataBaseProvider.MySql => VentasLimpieza.Infrastructure.Queries.sqlEstadistica.ProductosMasVendidos,
+                DataBaseProvider.MySql => sqlEstadistica.ProductosMasVendidos,
                 _ => throw new NotSupportedException("Provider no soportado")
             };
 
-            return await _dapper.QueryAsync<VentasLimpieza.Core.Auxiliares.producto_mas_vendido>(sql, new { Limit = limit });
+            return await _dapper.QueryAsync<producto_mas_vendido>(sql, new { Limit = limit });
         }
-        public async Task<IEnumerable<VentasLimpieza.Core.Auxiliares.ganancia_lote>> GetGananciasPorLote()
+        public async Task<IEnumerable<ganancia_lote>> GetGananciasPorLote()
         {
             var sql = _dapper.Provider switch
             {
-                DataBaseProvider.MySql => VentasLimpieza.Infrastructure.Queries.sqlEstadistica.GananciasPorLote,
+                DataBaseProvider.MySql => sqlEstadistica.GananciasPorLote,
                 _ => throw new NotSupportedException("Provider no soportado")
             };
 
-            return await _dapper.QueryAsync<VentasLimpieza.Core.Auxiliares.ganancia_lote>(sql);
+            return await _dapper.QueryAsync<ganancia_lote>(sql);
         }
     }
 }

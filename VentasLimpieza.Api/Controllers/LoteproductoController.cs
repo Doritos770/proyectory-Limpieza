@@ -17,7 +17,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace VentasLimpieza.Api.Controllers
 {
-    [Authorize(Roles = nameof(RoleType.Administrator))]
+   // [Authorize(Roles = nameof(RoleType.Administrator))]
     [Route("api/[controller]")] // api/Loteproducto   
     [ApiController]
     public class LoteproductoController : ControllerBase
